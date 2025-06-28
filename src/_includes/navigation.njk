@@ -1,18 +1,18 @@
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f3f3] px-10 py-3">
-    <div class="flex items-center gap-4 text-[#131615]">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f3f3] dark:border-b-[#1E2925] px-10 py-3 bg-white dark:bg-[#151e1b]">
+    <div class="flex items-center gap-4 text-[#131615] dark:text-[#f1f3f3]">
         <div class="size-4">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
             </svg>
         </div>
-        <h2 class="text-[#131615] text-lg font-bold leading-tight tracking-[-0.015em]"><a href="/">EcoLib</a></h2>
+        <h2 class="text-[#131615] dark:text-[#f1f3f3] text-lg font-bold leading-tight tracking-[-0.015em]"><a href="/">EcoLib</a></h2>
     </div>
     <div class="flex flex-1 justify-end gap-8">
         <div class="flex items-center gap-9">
-            <a class="text-[#131615] text-sm font-medium leading-normal" href="/about/">About</a>
-            <a class="text-[#131615] text-sm font-medium leading-normal" href="/resources/">Resources</a>
-            <a class="text-[#131615] text-sm font-medium leading-normal" href="/community/">Community</a>
-            <a class="text-[#131615] text-sm font-medium leading-normal" href="/events/">Events</a>
+            <a class="text-[#131615] dark:text-[#f1f3f3] text-sm font-medium leading-normal" href="/about/">About</a>
+            <a class="text-[#131615] dark:text-[#f1f3f3] text-sm font-medium leading-normal" href="/resources/">Resources</a>
+            <a class="text-[#131615] dark:text-[#f1f3f3] text-sm font-medium leading-normal" href="/community/">Community</a>
+            <a class="text-[#131615] dark:text-[#f1f3f3] text-sm font-medium leading-normal" href="/events/">Events</a>
             {# <a class="text-[#131615] text-sm font-medium leading-normal" href="#">Contact</a> #}
         </div>
         <div class="flex gap-2">
@@ -22,8 +22,8 @@
             <a href="/profile/" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#f1f3f3] text-[#131615] text-sm font-bold leading-normal tracking-[0.015em]">
                 <span class="truncate">Sign Up</span>
             </a>
-            <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f1f3f3] text-[#131615] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
-                <div class="text-[#131615]" data-icon="Sun" data-size="20px" data-weight="regular">
+            <button id="toggle-theme" class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f1f3f3] dark:bg-[#1E2925] text-[#131615] dark:text-[#f1f3f3] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                <div class="text-[#131615] dark:text-[#f1f3f3]" data-icon="Sun" data-size="20px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                         <path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path>
                     </svg>

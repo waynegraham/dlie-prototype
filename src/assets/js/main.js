@@ -1,20 +1,23 @@
-// Scroll to top button
-// @see https://tw-elements.com/docs/standard/components/scroll-back-to-top-button/
-const scrolltop = document.getElementById("btn-back-to-top");
+const themeToggle = document.querySelector('#toggle-theme');
 
-// When the user scrolls down 20px from the top of the document, show the button
-
-const scrollFunction = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrolltop.classList.remove("hidden");
+themeToggle.addEventListener('click', () => {
+  // if set via local storage previously
+  if (localStorage.getItem('color-theme')) {
+    if (localStorage.getItem('color-theme') === 'light') {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('color-theme', 'dark');
     } else {
-        scrolltop.classList.add("hidden");
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('color-theme', 'light');
     }
-    };
-    const backToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
-// When the user clicks on the button, scroll to the top of the document
-scrolltop.addEventListener("click", backToTop);
-window.addEventListener("scroll", scrollFunction);
+  // if NOT set via local storage previously
+  } else {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('color-theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('color-theme', 'dark');
+    }
+  }
+});
