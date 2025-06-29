@@ -8,11 +8,11 @@ layout: page.njk
     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
         <div class="flex flex-wrap justify-between gap-3 p-4">
             <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-[#0e1b17] dark:text-[#f1f3f3] tracking-light text-[32px] font-bold leading-tight">My Profile</p>
-                <p class="text-[#4e977f] dark:text-[#b7e0d2] text-sm font-normal leading-normal">Manage your account settings and preferences.</p>
+                <h1 class="text-[#0e1b17] dark:text-[#f1f3f3] text-h1 font-h1 leading-tight">My Profile</h1>
+                <p class="text-[#4e977f] dark:text-[#b7e0d2] text-h5 font-h5 leading-normal">Manage your account settings and preferences.</p>
             </div>
         </div>
-        <h3 class="text-[#0e1b17] dark:text-[#f1f3f3] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Account Information</h3>
+        <h2 class="text-[#0e1b17] dark:text-[#f1f3f3] text-h2 font-h2 leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Account Information</h2>
         <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
             <label class="flex flex-col min-w-40 flex-1">
                 <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-base font-medium leading-normal pb-2">Username</p>
@@ -42,12 +42,12 @@ layout: page.njk
         </div>
         <div class="flex px-4 py-3 justify-start">
             <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#14b781] text-[#0e1b17] text-sm font-bold leading-normal tracking-[0.015em]"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#14b781] text-[#0e1b17] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#10a370] transition-colors duration-300 shadow-md"
               >
                 <span class="truncate">Update Profile</span>
             </button>
         </div>
-        <h3 class="text-[#0e1b17] dark:text-[#f1f3f3] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Saved Resources</h3>
+        <h2 class="text-[#0e1b17] dark:text-[#f1f3f3] text-h2 font-h2 leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Saved Resources</h2>
         <div class="flex flex-col px-4 py-6">
             <div class="flex flex-col items-center gap-6">
                 <div
@@ -55,20 +55,20 @@ layout: page.njk
                   style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDsFw4sYTFpwXMO9t3sjEL05mbh0_9wslr7pp2rR_crhpMVho1GjoNzpmbvrg8MREwNqLTWxUtiKJZjlld6dXIdbcOcrc3pKi8-rej0e60uhjlf7MqGgq6p1JEPHnJUwBIcgRy1t2kexsiRmmq50p6fs-fH-H2chgTLnIhEjgCr1FNxYlKDfAzshvy-1q7nC-cGDnab7EtAwN0tUW3bQTA85NCNQiQDeoCSv8iLjl51Qy0agEemH93cAUQAK_s3456Z-N5nXpbIqY7E");'
                 ></div>
                 <div class="flex max-w-[480px] flex-col items-center gap-2">
-                    <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">No saved resources yet</p>
+                    <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-h5 font-h5 leading-tight tracking-[-0.015em] max-w-[480px] text-center">No saved resources yet</p>
                     <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-sm font-normal leading-normal max-w-[480px] text-center">Start saving resources to access them later.</p>
                 </div>
                 <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3ef] dark:bg-[#1E2925] text-[#0e1b17] dark:text-[#f1f3f3] text-sm font-bold leading-normal tracking-[0.015em]"
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3ef] dark:bg-[#1E2925] text-[#0e1b17] dark:text-[#f1f3f3] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#d6e1dd] dark:hover:bg-[#2a3a33] transition-colors duration-300"
                 >
                     <span class="truncate">Explore Resources</span>
                 </button>
             </div>
         </div>
-        <h3 class="text-[#0e1b17] dark:text-[#f1f3f3] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Community Interactions</h3>
+        <h2 class="text-[#0e1b17] dark:text-[#f1f3f3] text-h2 font-h2 leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Community Interactions</h2>
         <div class="flex items-center gap-4 bg-[#f8fcfa] dark:bg-[#1E2925] px-4 min-h-[72px] py-2 justify-between">
             <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-base font-medium leading-normal line-clamp-1">Forum Posts</p>
+                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-h5 font-h5 leading-normal line-clamp-1">Forum Posts</p>
                 <p class="text-[#4e977f] dark:text-[#b7e0d2] text-sm font-normal leading-normal line-clamp-2">5 posts</p>
             </div>
             <div class="shrink-0">
@@ -77,7 +77,7 @@ layout: page.njk
         </div>
         <div class="flex items-center gap-4 bg-[#f8fcfa] dark:bg-[#1E2925] px-4 min-h-[72px] py-2 justify-between">
             <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-base font-medium leading-normal line-clamp-1">Comments</p>
+                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-h5 font-h5 leading-normal line-clamp-1">Comments</p>
                 <p class="text-[#4e977f] dark:text-[#b7e0d2] text-sm font-normal leading-normal line-clamp-2">2 comments</p>
             </div>
             <div class="shrink-0">
@@ -86,7 +86,7 @@ layout: page.njk
         </div>
         <div class="flex items-center gap-4 bg-[#f8fcfa] dark:bg-[#1E2925] px-4 min-h-[72px] py-2 justify-between">
             <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-base font-medium leading-normal line-clamp-1">Followers</p>
+                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-h5 font-h5 leading-normal line-clamp-1">Followers</p>
                 <p class="text-[#4e977f] dark:text-[#b7e0d2] text-sm font-normal leading-normal line-clamp-2">3 followers</p>
             </div>
             <div class="shrink-0">
@@ -95,7 +95,7 @@ layout: page.njk
         </div>
         <div class="flex items-center gap-4 bg-[#f8fcfa] dark:bg-[#1E2925] px-4 min-h-[72px] py-2 justify-between">
             <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-base font-medium leading-normal line-clamp-1">Following</p>
+                <p class="text-[#0e1b17] dark:text-[#f1f3f3] text-h5 font-h5 leading-normal line-clamp-1">Following</p>
                 <p class="text-[#4e977f] dark:text-[#b7e0d2] text-sm font-normal leading-normal line-clamp-2">1 following</p>
             </div>
             <div class="shrink-0">
