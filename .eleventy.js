@@ -199,7 +199,8 @@ module.exports = async function(eleventyConfig) {
       includes: "_includes",
 
     },
-    pathPrefix: branch === 'dev' ? '/forum2025-dev/' : '',
+    pathPrefix: 'dlie-prototype'
+    // pathPrefix: branch === 'dev' ? '/forum2025-dev/' : '',
   }
 };
 
